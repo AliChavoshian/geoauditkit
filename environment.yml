@@ -1,0 +1,11 @@
+name: geoauditkit
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - geopandas
+  - shapely
+  - pyogrio
+  - pyproj
+  - pandas
+  - pytest
