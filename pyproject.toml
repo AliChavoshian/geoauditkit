@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geoauditkit"
+version = "0.1.0"
+description = "Vector data QA: audit, fix, and report for shapefiles/GeoPackages."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["geopandas", "shapely", "pyogrio", "pyproj", "pandas"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
